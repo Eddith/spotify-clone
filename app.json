@@ -6,9 +6,12 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/images/splash.png",
+      "android": {
+
+      },
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
