@@ -11,21 +11,31 @@ const song = {
   artist: 'Helen',
 }
 
-const PlayerWidget = () => {
-  return (
-    <View style={styles.container}>
-      <Image source={{ uri: song.imageUri }} style={styles.image} />
-      <View style={styles.rightContianer}>
-        <View style={styles.nameContainer}>
-          <Text style={styles.title}>{ song.title }</Text>
-          <Text style={styles.artist}>{ song.artist }</Text>
-        </View>
-        <View style={styles.iconsContainer}>
-          <AntDesign name="hearto" size={30} color={'white'} />
-          <FontAwesome name="play" size={30} color={'white'} />
+export type showWidgetProps = {
+  show: boolean;
+}
+
+const PlayerWidget = (prop: showWidgetProps) => {
+
+  return ( 
+    prop.show  ? (
+      <View style={styles.container}>
+        <Image source={{ uri: song.imageUri }} style={styles.image} />
+        <View style={styles.rightContianer}>
+          <View style={styles.nameContainer}>
+            <Text style={styles.title}>{ song.title }</Text>
+            <Text style={styles.artist}>{ song.artist }</Text>
+          </View>
+          <View style={styles.iconsContainer}>
+            <AntDesign name="hearto" size={30} color={'black'} />
+            <FontAwesome name="play" size={30} color={'black'} />
+          </View>
         </View>
       </View>
-    </View>
+    ) : (
+      <View>
+      </View>
+    )
   );
 }
 

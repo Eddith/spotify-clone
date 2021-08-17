@@ -72,7 +72,7 @@ function HomeNavigator() {
       <TabOneStack.Screen
         name="HomeScreen"
         component={HomeScreen}
-        options={{ headerTitle: 'Home' }}
+        options={{ headerTitle: 'Home', headerTitleAlign: 'center' }}
       />
       
       <TabOneStack.Screen

@@ -5,11 +5,11 @@ const styles = StyleSheet.create({
   container: {
     position: 'absolute',
     bottom: 48,
-    backgroundColor: 'rgb(86, 86, 86)',
+    backgroundColor: 'white',
     flexDirection: 'row',
     width: '100%',
     borderBottomWidth: 3,
-    borderBottomColor: 'black',
+    borderBottomColor: 'lightgray',
     alignItems: 'center',
   },
   rightContianer: {
@@ -33,13 +33,13 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   title: {
-    color: 'white',
+    color: 'black',
     fontSize: 18,
     fontWeight: 'bold',
     margin: 5,
   },
   artist: {
-    color: 'lightgray',
+    color: 'gray',
     fontSize: 20
   }
 })
